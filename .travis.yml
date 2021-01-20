@@ -1,0 +1,23 @@
+language: generic
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t afif1400/react-test -f ./client/Dockerfile.dev ./client
+
+script:
+  - docker run -e CI-true afif1400/react-test npm test
+
+after_success:
+  - docker build -t afif1400/multi-client ./client
+  - docker build -t afif1400/multi-nginx ./nginx
+  - docker build -t afif1400/multi-server ./server
+  - docker build -t afif1400/multi-worker ./worker
+  # login to docker hub or docker cli
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  # push the above images to docker hub
+  - docker push afif1400/multi-client
+  - docker push afif1400/multi-nginx
+  - docker push afif1400/multi-server
+  - docker push afif1400/multi-worker
