@@ -21,3 +21,15 @@ after_success:
   - docker push afif1400/multi-nginx
   - docker push afif1400/multi-server
   - docker push afif1400/multi-worker
+
+deploy:
+  provider: elasticbeanstalk
+  region: ap-south-1
+  app: fibonacci
+  env: fibonacci-env
+  bucket_name: elasticbeanstalk-ap-south-1-674514417039
+  bucket_path: docker-multi
+  on:
+    branch: master
+  access_key_id: $AWS_ACCESS_KEY
+  secret_access_key: $AWS_SECRET_KEY
