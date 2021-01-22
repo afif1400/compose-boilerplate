@@ -29,6 +29,7 @@ deploy:
   env: fibonacci-env
   bucket_name: elasticbeanstalk-ap-south-1-674514417039
   bucket_path: docker-multi
+  edge: true
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
