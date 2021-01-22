@@ -26,7 +26,7 @@ deploy:
   provider: elasticbeanstalk
   region: ap-south-1
   app: fibonacci
-  env: fibonacci-env
+  env: Fibonacci-env
   bucket_name: elasticbeanstalk-ap-south-1-674514417039
   bucket_path: docker-multi
   edge: true
