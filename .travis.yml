@@ -21,7 +21,7 @@ after_success:
   - docker push afif1400/multi-nginx
   - docker push afif1400/multi-server
   - docker push afif1400/multi-worker
-
+# comment for redeployment
 deploy:
   provider: elasticbeanstalk
   region: ap-south-1
