@@ -1,6 +1,6 @@
 {
   "AWSEBDockerrunVersion": 2,
-  "ContainerDefinitions": [
+  "containerDefinitions": [
     {
       "name": "client",
       "image": "afif1400/multi-client",
