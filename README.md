@@ -17,4 +17,4 @@ This is a boiler-plate application for using a docker nginx and react.
 + Use dockerfile.dev instead of **Dockerfile**
 + In the root directory run the below command
   ```zsh
-  $ docker-compose .
+  $ docker-compose up
