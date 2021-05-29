@@ -1,6 +1,11 @@
 # docker-fibonacci
 This is a boiler-plate application for using a docker nginx and react.
 
+## features
+This is a basic web application which just calculates the fibonacci number at a particular index.
+And this also contains a redis chaching layer to store the fibonacci numner at a particular index so that the request does not go to the server every time.
+This can be a boiler-plate for your application with CI usiug travis.
+
 ## prerequisites
   + docker
   + nodejs
@@ -17,4 +22,9 @@ This is a boiler-plate application for using a docker nginx and react.
 + Use dockerfile.dev instead of **Dockerfile**
 + In the root directory run the below command
   ```zsh
-  $ docker-compose up
+  $ docker-compose up --build
+  
+ head over to http://localhost:4000, to see the react-app running.
+ 
+ You can also run this application on an **Elastic Beanstalk** multicontainer docker environment, served from github or from the source code,
+ with CI using tracis CI.
