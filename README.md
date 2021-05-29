@@ -28,3 +28,6 @@ This can be a boiler-plate for your application with CI usiug travis.
  
  You can also run this application on an **Elastic Beanstalk** multicontainer docker environment, served from github or from the source code,
  with CI using tracis CI.
+
+## Production
+In production replave my Docker Hub ID which is afif1400 with your Docker Hub ID, SO that the images can be pushed to your repository and also fetched from.
