@@ -11,7 +11,7 @@ This is a boiler-plate application for using a docker nginx and react.
 + Worker - This is a caching server
 + Redis - This acts as a cache
 + client - This is the front-end app in reactjs
-+ poetgres - primary database
++ postgres - primary database
 
 ## local development
 + Use dockerfile.dev instead of **Dockerfile**
