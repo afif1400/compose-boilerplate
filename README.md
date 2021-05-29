@@ -31,3 +31,7 @@ This can be a boiler-plate for your application with CI usiug travis.
 
 ## Production
 In production replave my Docker Hub ID which is afif1400 with your Docker Hub ID, SO that the images can be pushed to your repository and also fetched from.
+
+## Help
+If you face a problem starting up the app, just file an issue and i would be happy to help. 
+All PRs are welcome
