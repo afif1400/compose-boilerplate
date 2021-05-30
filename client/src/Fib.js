@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-
+import Card from './UI/Card'
+import Button from './UI/Button';
+import classes from './Fib.module.css'
 class Fib extends Component {
   state = {
     seenIndexes: [],
@@ -47,20 +49,21 @@ class Fib extends Component {
 
   render() {
     return (
-      <div>
-        <form onSubmit={this.handleSubmit}>
+      <Card className={classes.input}>
+ <form onSubmit={this.handleSubmit} >
           <label>Enter your Index:</label>
           <input
             value={this.state.index}
             onChange={(e) => this.setState({ index: e.target.value })}
           />
-          <button>submit</button>
+          <Button type="submit">Submit</Button>
         </form>
         <h3>Indexes I have seen</h3>
         {this.renderSeenIndexes()}
         <h3>Calculated values</h3>
         {this.renderValues()}
-      </div>
+      </Card>
+      
     );
   }
 }
