@@ -6,12 +6,12 @@ const Header=()=>{
       <nav>
           <ul>
               <li>
-                  <NavLink to="/" >
+                  <NavLink activeClassName={classes.active} exact to='/'>
                     Home    
                   </NavLink>
               </li>
               <li>
-                  <NavLink to='/OtherPage' >
+                  <NavLink  activeClassName={classes.active} to='/otherpage'>
                       OtherPage
                   </NavLink>
               </li>
