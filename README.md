@@ -1,4 +1,4 @@
-# docker-fibonacci
+# docker-boilerplate
 This is a boiler-plate application for using a docker nginx and react.
 
 ## features
